@@ -1,0 +1,5 @@
+services:
+    OxidAcademy\ProductCounterService\Counter:
+        class: OxidAcademy\ProductCounterService\Counter
+        autowire: true
+        public: true
