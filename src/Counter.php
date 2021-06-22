@@ -2,7 +2,6 @@
 
 namespace OxidAcademy\ProductCounterService;
 
-use Doctrine\DBAL\FetchMode;
 use OxidEsales\Eshop\Application\Model\Article;
 use OxidEsales\Eshop\Core\Registry;
 use OxidEsales\Eshop\Core\TableViewNameGenerator;
@@ -30,8 +29,8 @@ class Counter
             ->where($product->getSqlActiveSnippet());
 
         $result = $queryBuilder->execute();
-        $numberOfProducts = $result->fetchAll(FetchMode::ASSOCIATIVE);
+        $numberOfProducts = $result->fetchAssociative();
         
-        return $numberOfProducts[0]['count'];
+        return $numberOfProducts['count'];
     }
 }
