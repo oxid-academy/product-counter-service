@@ -11,7 +11,7 @@ This OXID eShop Component counts all available products in the currently active 
 
 ## Example
 ```php
-/** @var Counter $counter */
+/** @var OxidAcademy\ProductCounterService\Counter $counter */
 $container = ContainerFactory::getInstance()->getContainer();
 $counter = $container->get(OxidAcademy\ProductCounterService\Counter::class);
 
