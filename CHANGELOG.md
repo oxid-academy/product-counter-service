@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.2] - 2022-02-11
 ### Changed
 - `Counter` added strict type modus.
+- `README.md` added an example call.
 
 ## [1.0.1] - 2021-06-22
 ### Changed
