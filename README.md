@@ -6,6 +6,8 @@
 composer require oxid-academy/product-counter-service
 ```
 
+If you encounter any issues after installation, clear your `source/tmp` directory.
+
 ## Description
 This OXID eShop Component counts all available products in the currently active shop.
 
